@@ -1,0 +1,108 @@
+{% extends 'HMS/basic.html' %}
+{% block title %} Infrastructure & Facility {% endblock %}
+  <style>
+    #derp:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    }
+    
+    @keyframes shake {
+      0% { transform: translate(1px, 1px) rotate(0deg); }
+      10% { transform: translate(-1px, -2px) rotate(-1deg); }
+      20% { transform: translate(-3px, 0px) rotate(1deg); }
+      30% { transform: translate(3px, 2px) rotate(0deg); }
+      40% { transform: translate(1px, -1px) rotate(1deg); }
+      50% { transform: translate(-1px, 2px) rotate(-1deg); }
+      60% { transform: translate(-3px, 1px) rotate(0deg); }
+      70% { transform: translate(3px, 1px) rotate(-1deg); }
+      80% { transform: translate(-1px, -1px) rotate(1deg); }
+      90% { transform: translate(1px, 2px) rotate(0deg); }
+      100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+  </style>
+  
+  {% block body %}
+  <body>
+    <div class="row" style="background-color: white" >
+     
+        <div class="col-sm-6">
+          <img src="https://www.arabhealthonline.com/content/dam/Informa/arabhealthonline/en/2020/conferences/AHC-healthinfra-heroimage.jpg"/>
+        </div>
+  
+        <div class="col-sm-6" style="padding-left: 5%;" >
+          <h1> Infrastructure and Facilities </h1>
+          <h6>Within lies one of Asia’s largest hospitals, offering residential accommodation to its doctors and staff, and facilitating a premier department of emergency medicine and centers of excellence for key super specialties. </h6>
+          <br>
+          <br>
+          <h3>Making Your Care Comfortable</h3>
+          <h6>we offer an array of medical services, ranging from preventive to curative and consultancy. View the list of infrastructure and facilities which we have to offer.</h6>
+        </div>
+        
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark justify-content-center ">
+      
+        <span class="navbar-text">
+          <h5>Facility Provided</h5>
+        </span>
+      </nav>
+      <div class="row">
+        <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+          <img src="https://mcdmag.com/wp-content/uploads/2013/11/White-Plains-Hospital_Lobby-rendering__Courtesy-Perkins-Eastman-1000x600.jpg" class="card-img-top" alt="..." width="400" height="200" id="derp">
+          <div class="card-body">
+            <p class="card-text">Lobbby</p>
+          </div>
+        </div>
+        <div class="card col-sm-3" style="width: 18rem; text-align:center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+          <img src="https://www.food-management.com/sites/food-management.com/files/styles/article_featured_retina/public/uploads/2016/07/uphs-cafe-4-copy.jpg?itok=G1f45cEL" class="card-img-top" alt="..." width="400" height="200" id="derp">
+          <div class="card-body">
+            <p class="card-text">Food court</p>
+          </div>
+        </div>
+        <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+          <img src="https://exame.com/wp-content/uploads/2016/09/size_960_16_9_medica-segurando-cofrinho1.jpg" class="card-img-top" alt="..."width="400" height="200"id="derp">
+          <div class="card-body">
+            <p class="card-text">Banking Facility</p>
+          </div>
+        </div>
+        <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+          <img src="https://i.guim.co.uk/img/media/3bdcc71ef73a293a602a9012e24eef2679000f09/0_0_3500_2100/master/3500.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=46ec8ddb6ac2c6c92f8a08c91cbe4271" class="card-img-top" alt="..."width="400" height="200"id="derp">
+          <div class="card-body">
+            <p class="card-text">Emergency</p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+      <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+        <img src="https://www.elgalabwater.com/sites/default/files/inline-images/GettyImages-823447770%20%281%29.jpg" class="card-img-top" alt="..."width="400" height="200"id="derp">
+        <div class="card-body">
+          <p class="card-text">Laborartory</p>
+        </div>
+      </div>
+      <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+        <img src="https://image.slidesharecdn.com/opd-170314051130/95/opd-1-638.jpg?cb=1489468471" class="card-img-top" alt="..."width="400" height="200"id="derp">
+        <div class="card-body">
+          <p class="card-text">OPD</p>
+        </div>
+      </div>
+      <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+        <img src="https://lompocvmc.com/images/services/birthcenter-nurse.jpg" class="card-img-top" alt="..."width="400" height="200"id="derp">
+        <div class="card-body">
+          <p class="card-text">Labor Delivery Recovery Postpartum (LDRP)</p>
+        </div>
+      </div>
+      <div class="card col-sm-3" style="width: 18rem;text-align: center; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 140%;">
+        <img src="https://media.proprofs.com/images/QM/user_images/2503852/New%20Project%20(8)(75).jpg" class="card-img-top" alt="..."width="400" height="200"id="derp">
+        <div class="card-body">
+          <p class="card-text">Pharmacy</p>
+        </div>
+      </div>
+      <hr>
+      {% endblock %}
+      {% block js %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    {% endblock %}

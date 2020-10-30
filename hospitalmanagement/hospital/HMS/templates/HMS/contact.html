@@ -1,0 +1,49 @@
+{% extends 'HMS/basic.html' %}
+
+{% block title%} Contact Us {% endblock %}
+
+{% block body %}
+
+<style>
+  body {
+    background-image: url("https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-position:50%;
+    
+    color: rgb(10, 12, 12);
+    
+  }
+  
+  
+</style>
+<br>
+<br>
+<div class="container">
+    <h2 style="color: rgb(14, 12, 12); text-align:center;" >Contact Us for any Query</h2>
+<form action="/shop/contact/" method="post">
+    
+    <br>
+    <br>
+    <br>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="name" class="form-control" id="name" name='name' placeholder="Enter your name"style="width: 40%; border-radius: 15px;" >
+  </div>
+  <div class="form-group">
+    <label for="email" >Email </label>
+    <input type="email" class="form-control" id="eamil" name='email'placeholder="Enter your email" style="width: 40%;border-radius: 15px;">
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" class="form-control" id="phone"name='phone' placeholder="Enter your Phone Number"style="width: 40%;border-radius: 15px;">
+  </div>
+  <div class="form-group">
+    <label for="desc">Enter your query here</label>
+    <textarea class="form-control"name='desc' id="desc" rows="3" style="width: 60%;border-radius: 15px;"></textarea>
+  </div>
+    <button type="submit" class="btn btn-secondary" style="border-radius: 25px;">Submit</button>
+
+</form>
+</div>
+
+{% endblock %}

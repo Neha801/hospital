@@ -1,0 +1,126 @@
+{% extends 'HMS/basic.html' %}
+
+{% block title%} Doctor Appointment {% endblock %}
+
+{% block body %}
+<style>
+body{
+    background-image: url(https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #f7f7ff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 3px solid #138496;
+}
+
+.dropdown-toggle {
+    background-color: #138496;
+    border-color: #138496;
+    width: 50%;
+}
+
+.btn-appointment {
+    background-color: #138496;
+    border-color: #138496;
+    width: 100%;
+}
+
+.content {
+    margin-top: 20%;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+.content h1 {
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+@media screen and(max-width:976px) {}
+</style>
+</head>
+
+<body>
+    <div class="inner-layer">
+        <div class="container">
+            <div class="row no-margin">
+                <div class="col-sm-7">
+                    <div class="content">
+                        <h1 style="color: black;">Book your slot now and save your time.</h1>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-5">
+                    <div class="form-data">
+                        <div class="form-head">
+                            <h2>Book Appointment</h2>
+                        </div>
+
+                        <div class="form-body">
+                            <div class="row form-row">
+                                <input type="text" placeholder="Enter full name" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="text" placeholder="Enter Mobile Number" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="text" placeholder="Enter Email Address" class="form-control">
+                            </div>
+                            <div class="row form-row">
+                                <input type="date" placeholder="Appoiment date" class="form-control">
+                            </div>
+
+                            <h6>Address Details</h6>
+
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter Area" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter city" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row form-row">
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Enter state" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" placeholder="Postal Code" class="form-control">
+                                </div>
+                            </div>
+                            <h6>Specialities</h6>
+                            <div class="row form-row">
+                                <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Select button</button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Oncology</a>
+                                    <a class="dropdown-item" href="#">Heart Care</a>
+                                    <a class="dropdown-item" href="#">Internal Medicine</a>
+                                </div>
+
+                            </div>
+
+                            <div class="row form-row">
+                                <button class="btn btn-success btn-appointment ">
+                                  Book Appointment
+                                  </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
